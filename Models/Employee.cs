@@ -1,11 +1,12 @@
 ﻿using Mono.TextTemplating;
 using System.ComponentModel.DataAnnotations;
+// Importation des bibliothèques (System. , Mono. , etc...)
 
-namespace AgriFoodManagementFR.Models
+namespace AgriFoodManagementFR.Models // Définition du namespace
 {
-    public class Employee
+    public class Employee // Définition de la classe Employee
     {
-        public int Id { get; set; }
+        public int Id { get; set; } // Propriété Id de type int, permettant de stocker l'identifiant de l'employé
 
         [Required]
         public string? Firstname { get; set; }
@@ -23,6 +24,8 @@ namespace AgriFoodManagementFR.Models
         public string? Email { get; set; }
     }
 }
+
+// Il y a également les différentes propriété de cette classe comme : "Firstname", "Lastname", etc...
 
 /*
 "[Required(ErrorMessage = "Le prénom est obligatoire.")]" garantit que la propriété ne peut pas être nulle ou vide. 
